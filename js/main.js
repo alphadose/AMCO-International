@@ -154,7 +154,7 @@ $(document).ready(function(){
 			
 		beforeShow: function () {
 			this.title = $(this.element).attr('title');
-			this.title = '<h3>' + this.title + '</h3>' + '<p>' + $(this.element).parents('.portfolio-item').find('img').attr('alt') + '</p>';
+			this.title = '<h3>' + this.title + '</h3>';
 		},
 		
 		helpers : {
@@ -181,7 +181,7 @@ function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 
-	    var myLatLng = new google.maps.LatLng(22.402789, 91.822156);
+	    var myLatLng = new google.maps.LatLng(22.259034, 84.887004);
 
 	    var mapOptions = {
 	        zoom: 15,
@@ -253,7 +253,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(22.402789, 91.822156),
+        position: new google.maps.LatLng(22.259034, 84.887004),
         map: map,
 		icon: 'img/icons/map-marker.png',
     });
